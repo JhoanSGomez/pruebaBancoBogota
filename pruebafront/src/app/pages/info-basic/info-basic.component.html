@@ -1,0 +1,26 @@
+<section id="register" class="pb-5 pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-5 mx-auto">
+                <div class="card_register">
+                    <div>
+                        <form [formGroup]="form" class="registerForm">
+                            <h1 class="h3 mb-3 font-weight-normal text-center">Información básica</h1>
+                            <div class="form-group mb-3">
+                                <label>Primer apellido</label>
+                                <input type="text" class="form-control" formControlName="lastname" name="lastname"
+                                    [(ngModel)]="data.primerApellido" readonly>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label>Primer nombre</label>
+                                <input type="text" class="form-control" formControlName="name" name="name"
+                                    [(ngModel)]="data.primerNombre" readonly>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block" (click)="regresar()">Regresar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
